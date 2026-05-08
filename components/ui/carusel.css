@@ -1,0 +1,50 @@
+/* 🔹 Carousel asosiy konteyner */
+.custom-carousel {
+    position: relative;
+    width: 100%;
+}
+
+/* 🔹 Rasmlar responsive */
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem; /* rounded-md */
+    object-fit: cover;
+}
+
+/* 🔹 Custom arrow styling */
+.custom-arrow {
+    color: #2563eb !important; /* blue-600 */
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+.custom-arrow:hover {
+    color: #1d4ed8; /* blue-700 */
+    transform: scale(1.15);
+}
+
+/* 🔹 Arrow pozitsiyasini to‘g‘rilash */
+.custom-arrow.left {
+    left: 8px;
+    color: #1d4ed8!important;
+    z-index: 2;
+}
+
+.custom-arrow.right {
+    right: 8px;
+    z-index: 2;
+}
+
+/* 🔹 Mobil uchun (kichik ekranlarda) arrow o‘lchamini kichraytirish */
+@media (max-width: 640px) {
+    .custom-arrow {
+        font-size: 22px;
+    }
+}
